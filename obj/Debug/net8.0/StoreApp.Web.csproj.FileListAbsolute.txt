@@ -158,3 +158,6 @@
 /Users/omerd/Desktop/Projeler/DotNet/StoreApp/StoreApp/StoreApp.Web/obj/Debug/net8.0/StoreApp.Web.pdb
 /Users/omerd/Desktop/Projeler/DotNet/StoreApp/StoreApp/StoreApp.Web/obj/Debug/net8.0/StoreApp.Web.genruntimeconfig.cache
 /Users/omerd/Desktop/Projeler/DotNet/StoreApp/StoreApp/StoreApp.Web/obj/Debug/net8.0/ref/StoreApp.Web.dll
+/Users/omerd/Desktop/Projeler/DotNet/StoreApp/StoreApp/StoreApp.Web/obj/Debug/net8.0/StoreApp.Web.RazorAssemblyInfo.cache
+/Users/omerd/Desktop/Projeler/DotNet/StoreApp/StoreApp/StoreApp.Web/obj/Debug/net8.0/StoreApp.Web.RazorAssemblyInfo.cs
+/Users/omerd/Desktop/Projeler/DotNet/StoreApp/StoreApp/StoreApp.Web/obj/Debug/net8.0/StoreApp.Web.sourcelink.json

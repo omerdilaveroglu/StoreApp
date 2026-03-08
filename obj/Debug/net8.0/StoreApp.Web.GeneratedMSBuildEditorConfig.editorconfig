@@ -19,3 +19,15 @@ build_property.MSBuildProjectDirectory = /Users/omerd/Desktop/Projeler/DotNet/St
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
+
+[/Users/omerd/Desktop/Projeler/DotNet/StoreApp/StoreApp/StoreApp.Web/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/omerd/Desktop/Projeler/DotNet/StoreApp/StoreApp/StoreApp.Web/Views/_VievStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXZTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/omerd/Desktop/Projeler/DotNet/StoreApp/StoreApp/StoreApp.Web/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 

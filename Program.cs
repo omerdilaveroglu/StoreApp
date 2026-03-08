@@ -16,6 +16,12 @@ builder.Services.AddScoped<IStoreRepository, EFStoreRepository>();
 
 var app = builder.Build();
 
-app.MapGet("/", () => "Hello World!");
+app.UseStaticFiles();
+app.UseRouting();
+
+
+app.MapDefaultControllerRoute();
+
+// app.MapGet("/", () => "Hello World!");
 
 app.Run();
