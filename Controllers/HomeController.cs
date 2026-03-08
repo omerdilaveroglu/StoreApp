@@ -8,23 +8,29 @@ public class HomeController : Controller
 {
     private readonly IStoreRepository _storeRepository;
 
+    public int pageSize = 3;
+
     public HomeController(IStoreRepository repository)
     {
         _storeRepository = repository;
     }
  
- 
-    public IActionResult Index()
+    
+    public IActionResult Index(int page = 1)
     {
-        var products = _storeRepository.Products.Select(p => new ProductViewModel
-        {
-            Id = p.Id,
-            Name = p.Name,
-            Description = p.Description,
-            Price = p.Price,
-            Category = p.Category
+        var products = _storeRepository
+            .Products
+            .Skip((page - 1) * pageSize)
+            .Select(p => new ProductViewModel
+            {
+                Id = p.Id,
+                Name = p.Name,
+                Description = p.Description,
+                Price = p.Price,
+                Category = p.Category
 
-        }).ToList();
+            }).Take(pageSize);
+            
         return View(new ProductListViewModel { Products = products });
     }
 }
