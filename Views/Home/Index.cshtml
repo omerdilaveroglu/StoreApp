@@ -4,20 +4,24 @@
 
 
 @if (!Model.Products.Any())
-{
-    <p>No products found.</p>
-}
+    {
+        <p>No products found.</p>
+    }
 else
+    {
+        @foreach (var p in Model.Products){
+            <div>
+                <h4>@p.Name</h4>
+                <p>@p.Description</p>
+                <p>Price: @p.Price</p>
+                <p>Category: @p.Category</p>
+            </div>
+        }
+    }
+
+
+
+@for(var i = 1; i <= Model.PageInfo.TotalPages; i++)
 {
-    @foreach (var p in Model.Products){
-    <div>
-        <h4>@p.Name</h4>
-        <p>@p.Description</p>
-        <p>Price: @p.Price</p>
-        <p>Category: @p.Category</p>
-    </div>
-}
-}
-
-
-
+    <a href="/?page=@i">@i</a>
+}  

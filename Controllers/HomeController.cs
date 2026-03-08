@@ -30,7 +30,13 @@ public class HomeController : Controller
                 Category = p.Category
 
             }).Take(pageSize);
-            
-        return View(new ProductListViewModel { Products = products });
+
+        return View(new ProductListViewModel { Products = products ,
+            PageInfo = new PageInfo
+            {
+                TotalItems = _storeRepository.Products.Count(),
+                ItemsPerPage = pageSize
+            }
+        });
     }
 }
